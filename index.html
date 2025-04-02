@@ -27,18 +27,23 @@
             width: 275px;
             height: auto;
         }
-        .home-btn {
-            font-family: 'Bangers', sans-serif;
-            font-size: 24px;
-            background: none;
-            border: 2px solid white;
-            padding: 10px 20px;
-            color: white;
-            cursor: pointer;
+        .nav-buttons {
             position: absolute;
             left: 20px;
             top: 50%;
             transform: translateY(-50%);
+            display: flex;
+            gap: 10px;
+        }
+        .nav-btn {
+            font-family: 'Bangers', sans-serif;
+            font-size: 18px;
+            background: none;
+            border: 2px solid white;
+            padding: 8px 15px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
         }
         .content {
             padding: 50px 20px;
@@ -51,7 +56,11 @@
 </head>
 <body>
     <header>
-        <a href="https://discord.gg/WJk896pncz" class="home-btn" target="_blank">Discord</a>
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="terms.html" class="nav-btn">Terms of Service</a>
+            <a href="privacy.html" class="nav-btn">Privacy Policy</a>
+        </div>
         <img src="https://i.ibb.co/QjjbNFPw/logo.png" alt="NiobiumSecurity Logo" class="logo">
     </header>
     <div class="content">
